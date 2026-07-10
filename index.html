@@ -98,21 +98,32 @@ details {
 
 
 summary {
-
     cursor: pointer;
-
     font-size: 1.15rem;
-
     font-weight: bold;
+    display: flex;
+    align-items: flex-end;
+    gap: 8px;
+    list-style: none;
+}
 
-    display: list-item;
-    
-    padding-left: 8px;
+summary::-webkit-details-marker {
+    display: none;
+}
 
+summary::before {
+    content: "▶";
+    font-size: 0.75rem;
+    margin-bottom: 4px;
+    flex-shrink: 0;
 }
 
 .summary-content {
-    display: inline
+    display: block;
+}
+
+details[open] summary::before {
+    transform: rotate(90deg);
 }
 
 .composer {
