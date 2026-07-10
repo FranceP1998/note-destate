@@ -159,22 +159,31 @@ summary::-webkit-details-marker {
 
 }
 
-summary {
+.piece-title::before {
 
-    cursor: pointer;
+    content: "";
 
-    font-size: 1.15rem;
+    display: inline-block;
 
-    font-weight: bold;
+    width: 0;
+    height: 0;
 
-    list-style: none;
+    border-top: 6px solid transparent;
+    border-bottom: 6px solid transparent;
+    border-left: 9px solid #e30613;
+
+    margin-right: 10px;
+
+    vertical-align: middle;
+
+    transition: transform 0.2s ease;
 
 }
 
 
-summary::-webkit-details-marker {
+details[open] .piece-title::before {
 
-    display: none;
+    transform: rotate(90deg);
 
 }
 
