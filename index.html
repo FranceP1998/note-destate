@@ -150,22 +150,24 @@ summary::-webkit-details-marker {
 
 
 .piece-title {
-
     display: block;
-
     font-size: 1rem;
-
     text-transform: uppercase;
-
     font-weight: bolder;
-
+    position: relative;
+    padding-left: 19px;
 }
+
 
 .piece-title::before {
 
     content: "";
 
-    display: inline-block;
+    position: absolute;
+
+    left: 0;
+    top: 50%;
+    transform: translateY(-50%);
 
     width: 0;
     height: 0;
@@ -174,18 +176,13 @@ summary::-webkit-details-marker {
     border-bottom: 6px solid transparent;
     border-left: 9px solid;
 
-    margin-right: 10px;
-
-    vertical-align: middle;
-
     transition: transform 0.2s ease;
-
 }
 
 
 details[open] .piece-title::before {
 
-    transform: rotate(90deg);
+    transform: translateY(-50%) rotate(90deg);
 
 }
 
