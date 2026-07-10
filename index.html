@@ -9,10 +9,6 @@
 
 <style>
 
-:root {
-    color-scheme: light dark;
-}
-
 * {
     box-sizing: border-box;
 }
@@ -23,8 +19,6 @@ body {
 
     background: #a6d3dd;
     color: #222;
-
-    transition: background 0.2s, color 0.2s;
 }
 
 
@@ -33,30 +27,6 @@ body {
     margin: auto;
     padding: 20px 15px 50px;
     text-align: center;
-}
-
-
-/* DARK MODE AUTOMATICA */
-
-@media (prefers-color-scheme: dark) {
-
-    body {
-        background: #111;
-        color: #eee;
-    }
-
-    .card {
-        background: #1d1d1d;
-    }
-
-    details {
-        background: #1d1d1d;
-    }
-
-    summary {
-        color: #fff;
-    }
-
 }
 
 
@@ -97,13 +67,7 @@ h1 {
 
 details {
 
-    margin: 15px 0;
-
-    padding: 15px;
-
-    border-radius: 12px;
-
-    background: white;
+    margin: 20px 0;
 
     text-align: left;
 
@@ -118,12 +82,14 @@ summary {
 
     font-weight: bold;
 
+    display: inline-block
+
 }
 
 
 details p {
 
-    margin-top: 15px;
+    margin-top: 8px;
 
     font-size: 0.95rem;
 
