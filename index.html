@@ -1,0 +1,321 @@
+```html
+<!DOCTYPE html>
+<html lang="it">
+
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Note d'Estate - Programma del Concerto</title>
+
+<style>
+
+:root {
+    color-scheme: light dark;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+
+    background: #a6d3dd;
+    color: #222;
+
+    transition: background 0.2s, color 0.2s;
+}
+
+
+.container {
+    width: min(95%, 700px);
+    margin: auto;
+    padding: 20px 15px 50px;
+    text-align: center;
+}
+
+
+/* DARK MODE AUTOMATICA */
+
+@media (prefers-color-scheme: dark) {
+
+    body {
+        background: #111;
+        color: #eee;
+    }
+
+    .card {
+        background: #1d1d1d;
+    }
+
+    details {
+        background: #1d1d1d;
+    }
+
+    summary {
+        color: #fff;
+    }
+
+}
+
+
+/* LOCANDINA */
+
+.poster {
+    width: 100%;
+    max-width: 500px;
+    border-radius: 12px;
+}
+
+
+/* TESTI */
+
+h1 {
+    font-size: clamp(2rem, 7vw, 3rem);
+    margin-bottom: 10px;
+}
+
+.subtitle {
+    font-size: 1.1rem;
+    line-height: 1.5;
+}
+
+
+/* PULSANTI */
+
+.buttons {
+    margin: 25px 0;
+}
+
+.button {
+
+    display: inline-block;
+
+    padding: 12px 18px;
+
+    margin: 5px;
+
+    border-radius: 25px;
+
+    background: #008B6B;
+
+    color: white;
+
+    text-decoration: none;
+
+    font-weight: bold;
+
+}
+
+
+/* PROGRAMMA */
+
+.section-title {
+
+    margin-top: 40px;
+
+    font-size: 1.5rem;
+
+    font-weight: bold;
+
+}
+
+
+details {
+
+    margin: 15px 0;
+
+    padding: 15px;
+
+    border-radius: 12px;
+
+    background: white;
+
+    text-align: left;
+
+}
+
+
+summary {
+
+    cursor: pointer;
+
+    font-size: 1.15rem;
+
+    font-weight: bold;
+
+}
+
+
+details p {
+
+    margin-top: 15px;
+
+    font-size: 0.95rem;
+
+    line-height: 1.5;
+
+    font-style: italic;
+
+    opacity: 0.8;
+
+}
+
+
+/* FOOTER */
+
+.footer {
+
+    margin-top: 50px;
+
+    line-height: 1.5;
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<div class="container">
+
+
+<img class="poster" src="locandina.jpg" alt="Locandina Note d'Estate">
+
+
+<h1>Note d'Estate</h1>
+
+
+<p class="subtitle">
+
+Benvenuti al nostro concerto estivo.<br>
+
+In questa pagina potete consultare il programma
+
+e scoprire qualche curiosità sui brani eseguiti.
+
+</p>
+
+
+
+<div class="buttons">
+
+<a class="button" href="https://www.instagram.com/" target="_blank">
+📸 Instagram
+</a>
+
+
+<a class="button" href="https://www.facebook.com/" target="_blank">
+📘 Facebook
+</a>
+
+</div>
+
+
+
+<a class="button" href="programma.pdf" target="_blank">
+
+📥 Scarica il programma PDF
+
+</a>
+
+
+
+<h2 class="section-title">
+Programma
+</h2>
+
+
+
+<details>
+
+<summary>Pirates of the Caribbean</summary>
+
+<p>
+Descrizione del brano. Inserire qui informazioni
+sul compositore, sull'arrangiamento o sulla storia
+del pezzo.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>Highlights from Aladdin</summary>
+
+<p>
+Descrizione del brano. Inserire qui curiosità
+e informazioni per il pubblico.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>Nessun Dorma</summary>
+
+<p>
+Descrizione del brano. Inserire qui la presentazione
+del pezzo.
+</p>
+
+</details>
+
+
+
+<details>
+
+<summary>Brano successivo</summary>
+
+<p>
+Descrizione del brano.
+</p>
+
+</details>
+
+
+
+<div class="footer">
+
+Grazie per aver partecipato al concerto.
+
+<br><br>
+
+Seguiteci sui social per rimanere aggiornati
+sui nostri prossimi eventi.
+
+<br>
+
+
+<div class="buttons">
+
+<a class="button" href="https://www.instagram.com/" target="_blank">
+📸 Instagram
+</a>
+
+
+<a class="button" href="https://www.facebook.com/" target="_blank">
+📘 Facebook
+</a>
+
+</div>
+
+
+</div>
+
+
+</div>
+
+
+</body>
+
+</html>
