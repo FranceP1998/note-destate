@@ -111,19 +111,23 @@ summary::-webkit-details-marker {
     display: none;
 }
 
-summary::before {
-    content: "▶";
-    font-size: 0.75rem;
-    margin-bottom: 4px;
-    flex-shrink: 0;
+summary {
+
+    cursor: pointer;
+
+    font-size: 1.15rem;
+
+    font-weight: bold;
+
+    list-style: none;
+
 }
 
-.summary-content {
-    display: block;
-}
 
-details[open] summary::before {
-    transform: rotate(90deg);
+summary::-webkit-details-marker {
+
+    display: none;
+
 }
 
 .composer {
@@ -152,6 +156,25 @@ details[open] summary::before {
     text-transform: uppercase;
 
     font-weight: bolder;
+
+}
+
+summary {
+
+    cursor: pointer;
+
+    font-size: 1.15rem;
+
+    font-weight: bold;
+
+    list-style: none;
+
+}
+
+
+summary::-webkit-details-marker {
+
+    display: none;
 
 }
 
